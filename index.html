@@ -3,12 +3,57 @@
   <head>
     <meta charset="utf-8">
     <title>Small casino</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
   </head>
   <body>
-  <h1>Simple casino with games for all</h1>
-  <p>Main numbers:<span id="mainNumbers"></span></p>
-  <p>Bonus number:<span id="bonusNumber"></span></p>
+  <div class="container">
+    <h1 class="text-center">Simple casino with games for all</h1>
+    <div class="row">
+      <div class="col-md-4">
+        <a href="#" id="lottoGame">
+          <div class="card text-white bg-primary">
+            <img class="card-img-top" src="images/Lotto_standaard_gif.webp" alt="Card image cap" width="318" height="180">
+            <div class="card-body">
+              <h4 class="card-title">Lotto America</h4>
+              <p class="card-text">Join in the excitement of the nation’s favourite lottery game that’s helped change lives and made dreams possible.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#" id="diceGame">
+          <div class="card text-white bg-danger">
+            <img class="card-img-top" src="images/Roll-The-Dice.jpg" alt="Card image cap" width="318" height="180">
+            <div class="card-body">
+              <h4 class="card-title">Dice roll</h4>
+              <p class="card-text">Dice are used for generating random numbers and are often used in gambling games, such as craps or sic bo.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+      <div class="col-md-4">
+        <a href="#">
+          <div class="card text-white bg-info">
+            <img class="card-img-top" src="images/Lotto_standaard_gif.webp" alt="Card image cap" width="318" height="180">
+            <div class="card-body">
+              <h4 class="card-title">Simple</h4>
+              <p class="card-text">Join in the excitement of the nation’s favourite lottery game that’s helped change lives and made dreams possible.</p>
+            </div>
+          </div>
+        </a>
+      </div>
+    </div>
+    <div class="row" id="mainContent">
 
+    </div>
+  </div>
+  <!--<h1>Simple casino with games for all</h1>
+  <p>Main numbers:<span id="mainNumbers"></span></p>
+  <p>Bonus number:<span id="bonusNumber"></span></p>-->
+
+  <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
   <script src="scripts/lotto.js"></script>
   <script src="scripts/formhandler.js"></script>
   <script src="scripts/main.js"></script>

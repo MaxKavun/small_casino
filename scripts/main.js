@@ -8,5 +8,7 @@
   var formHandler = new FormHandler();
   var newLotto = new PlayLotto();
 
-  newLotto.actOutLotto(formHandler.addLottoNumbers);
+  
+  formHandler.addLottoGame(newLotto.actOutLotto);
+  formHandler.addClickHandler();
 }(window))
