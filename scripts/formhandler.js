@@ -18,11 +18,9 @@
           mainContent.innerHTML = this.responseText;
         }
       };
-      xhttp.open('GET', '../pages/lotto.html', true);
+      xhttp.open('GET', '../pages/lotto.html', false);
       xhttp.send();
-      setTimeout(function(){
-        FormHandler.prototype.addLottoClickHandler.call()
-      },50);
+      FormHandler.prototype.addLottoClickHandler.call();
     });
     diceGame.addEventListener("click", function() {
       alert("Dice Roll game");
